@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  
+  /* Luxury Palette */
+  --color-burgundy: #7C2128;
+  --color-gold: #C9A84C;
+  --color-cream: #FBF7F0;
+  --color-charcoal: #1A1A1A;
+}
+
+body {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes flyToCart {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  100% {
+    transform: scale(0.1) rotate(25deg);
+    top: 20px;
+    left: calc(100vw - 60px);
+    opacity: 0;
+  }
+}
