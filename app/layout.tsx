@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Luxora Gifts",
-  description: "High-end cinematic luxury e-commerce experience.",
+  title: "The Royal Palace | Luxury Hotel & Spa",
+  description: "Experience transcended luxury in our historical palace sanctuary.",
 };
 
 export default function RootLayout({
